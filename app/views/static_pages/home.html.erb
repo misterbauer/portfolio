@@ -1,2 +1,53 @@
-<h1 class="text-center">joe bauer</h1>
-<p class="text-center">Find me in app/views/static_pages/home.html.erb</p>
+<div class="row header">
+  <div class="offset-3 col-6">
+    <p>
+      <span class="accent-color font-italic">joe bauer<span class="blinking-cursor">_</span></span>
+      <span>&nbsp;&nbsp;/ developer</span>
+    </p>
+    <p>portland, or / everywhere</p>
+    <p>262.930.7445 / joe@joebauer.co</p>
+  </div>
+</div>
+
+<div class="row scrolling-text">
+  <div class="col-12">
+    <marquee id="top-marquee" behavior="scroll" direction="right" scrollamount="50">CODERCODERCODERCODERCODERCODER<span class="accent-color font-italic">CODER</span>CODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODER<span class="accent-color font-italic">CODER</span>CODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODER<span class="accent-color font-italic">CODER</span>CODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODER</marquee>
+    <marquee id="bottom-marquee" behavior="scroll" direction="left" scrollamount="20">CODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODER<span class="accent-color font-italic">CODER</span>CODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODER<span class="accent-color font-italic">CODER</span>CODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODERCODER</marquee>
+  </div>
+</div>
+
+
+<div class="row projects-heading">
+  <div class="offset-3 col-6 text-right font-italic accent-color">
+    <h2>SELECTED PROJECTS</h2>
+  </div>
+</div>
+<div class="row projects">
+  <div class="offset-3 col-6 text-right project">
+    <h3><span class="project-title">ELYSIUM</span><span>&nbsp;/ A RESTful webapp + .NET Windows Service Client</span></h3>
+    <span>Built for Apex Custom Solutions using
+    <span class="font-weight-bold">Ruby on Rails, C#, XAML, SQL</span></span>
+    <div>--</div>
+    <%= image_tag("elysium.jpg") %>
+    <div class="project-description">
+      As the sole developer on this project, I was tasked with designing and building a full-featured RESTful tenant billing application.
+      </br></br>
+      The first component is a .NET desktop application and Windows service combo that allows the user to choose a network SQL server instance (Metasys ADS), sign into Elysium, and automatically upload SQL data to the web app.
+      </br></br>
+      The web application component uses the SQL data to automatically bill tenants that have been configured by a building manager. It offers multi-user/multi-role login via web and JSON, can verify and accept payments via <a href="https://stripe.com" target="_null">Stripe</a>, sends emails using <a href="https://mailgun.com" target="_null">Mailgun</a>, and is hosted on <a href="https://heroku.com" target="_nul">Heroku</a>.
+    </div>
+  </div>
+
+  <div class="offset-3 col-6 text-right project">
+    <h3><span class="project-title">EVEREST</span><span>&nbsp;/ A Windows Desktop Data Reporting Application</span></h3>
+    <span>Client: Apex Custom Solutions</span>
+    <span>Skills: C#, XAML, SQL</span>
+  </div>
+
+  <div class="offset-3 col-6 text-right project">
+    <h3><span class="project-title">ELYSIUM</span><span>&nbsp;/ A RESTful webapp + .NET Windows Service Client</span></h3>
+    <span>Client: Apex Custom Solutions</span>
+    <span>Skills: Ruby on Rails, C#, XAML, SQL</span>
+  </div>
+
+</div>
